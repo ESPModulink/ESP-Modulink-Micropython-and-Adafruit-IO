@@ -9,17 +9,16 @@ from time import sleep
 
 sensor = dht.DHT11(Pin(15))                  # DHT11 Sensor on IO15 of ESP32
 led=Pin(2,Pin.OUT)
-# WIFI_SSID     = 'MERCUSYS_8CA4'
-# WIFI_PASSWORD = 'F6bMHDAadT#'
 
-WIFI_SSID     = 'BUAP_Estudiantes'
-WIFI_PASSWORD = 'f85ac21de4'
+
+WIFI_SSID     = 'Wi-Fi_Name'
+WIFI_PASSWORD = 'Wi-Fi_Password'
 
 mqtt_client_id      = bytes('client_'+'1', 'utf-8') # Just a random client ID
 
 ADAFRUIT_IO_URL     = 'io.adafruit.com' 
-ADAFRUIT_USERNAME   = 'IsmaMinor'
-ADAFRUIT_IO_KEY     = '15c4491a6c9944ebb4d2fcb1f8ae356a'
+ADAFRUIT_USERNAME   = 'your_username'
+ADAFRUIT_IO_KEY     = 'your_key'
 
 TEMP_FEED_ID      = 'temp'
 HUM_FEED_ID      = 'hum'
